@@ -1,4 +1,4 @@
-# portfolio
+# Junrey Algario Portfolio
 
 ## Project setup
 ```
