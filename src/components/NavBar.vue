@@ -59,8 +59,4 @@ const props = defineProps({
 const state = reactive({ menu: false });
 const route = useRoute();
 const path = computed(() => route.path);
-
-const menuClick = () => {
-  state.menu = !state.menu;
-};
 </script>

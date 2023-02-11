@@ -1,7 +1,6 @@
 .navigation {
   background-color: #000;
-  padding: 16px 100px;
-
+  padding: $desktop_padding;
   ul {
     list-style-type: none;
     display: inline-block;
@@ -73,9 +72,9 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $mobile_width) {
   .navigation {
-    padding: 16px 16px;
+    padding: $mobile_padding;
 
     .menu {
       display: block;

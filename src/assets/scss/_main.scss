@@ -1,7 +1,7 @@
 @import "_vars.scss";
 @import "_colors";
 @import "_fonts.scss";
-@import "_header.scss";
+@import "_nav_bar.scss";
 
 body {
   margin: 0 auto;
@@ -9,7 +9,13 @@ body {
 }
 
 .content {
-  padding: 20px 100px;
-  background-color: green;
-  // height: calc(100vh - ($header_height));
+  padding: $desktop_padding;
+  min-height: calc(100vh - 116px);
+}
+
+@media only screen and (max-width: $mobile_width) {
+  .content {
+    padding: $mobile_padding;
+    min-height: calc(100vh - 102px);
+  }
 }
