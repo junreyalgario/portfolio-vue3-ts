@@ -2,6 +2,11 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import AboutView from "../views/AboutView.vue";
 import ContactView from "@/views/ContactView.vue";
+import ResumeView from "@/views/ResumeView.vue";
+import ServicesView from "@/views/ServicesView.vue";
+import SkillsView from "@/views/SkillsView.vue";
+import PortfolioView from "@/views/PortfolioView.vue";
+import _404View from "@/views/404View.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -17,27 +22,32 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/resume",
     name: "resume",
-    component: HomeView,
+    component: ResumeView,
   },
   {
     path: "/services",
     name: "services",
-    component: AboutView,
+    component: ServicesView,
   },
   {
     path: "/skills",
     name: "skills",
-    component: HomeView,
+    component: SkillsView,
   },
   {
     path: "/portfolio",
     name: "portfolio",
-    component: AboutView,
+    component: PortfolioView,
   },
   {
     path: "/contact",
     name: "contact",
     component: ContactView,
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: _404View,
   },
 ];
 

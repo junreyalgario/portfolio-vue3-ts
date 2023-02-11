@@ -13,6 +13,10 @@ const routes: Array<Route> = [
     to: "/",
   },
   {
+    title: "About",
+    to: "/about",
+  },
+  {
     title: "Resume",
     to: "/resume",
   },
@@ -27,10 +31,6 @@ const routes: Array<Route> = [
   {
     title: "Portfolio",
     to: "/portfolio",
-  },
-  {
-    title: "About",
-    to: "/about",
   },
   {
     title: "Contact",

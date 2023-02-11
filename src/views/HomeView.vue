@@ -21,7 +21,7 @@
       </div>
       <div class="mt-4">
         <a class="btn outlined light mr-1" href="/contact">Say Hello!</a>
-        <a class="btn outlined success mr-1" href="#">My Works</a>
+        <a class="btn outlined success mr-1" href="/portfolio">My Works</a>
         <a
           class="btn info outlined"
           href="https://github.com/junreyalgario"

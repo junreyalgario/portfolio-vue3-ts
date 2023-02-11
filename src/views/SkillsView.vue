@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <Header title="About Me" :closable="true"></Header>
+    <Header title="My Skills" :closable="true"></Header>
     <div class="hr primary"></div>
   </div>
 </template>

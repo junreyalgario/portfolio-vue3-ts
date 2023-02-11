@@ -1,6 +1,6 @@
 <template>
   <div class="content contact">
-    <Header title="Contact me" :closable="true"></Header>
+    <Header title="Contact Me" :closable="true"></Header>
     <div class="hr primary"></div>
     <div class="text mt-2 flex justify-center">
       <h2 class="m-0 text-center">
