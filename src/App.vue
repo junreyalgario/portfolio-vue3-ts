@@ -1,5 +1,5 @@
 <template>
-  <Navigation title="Junrey" :routes="routes"></Navigation>
+  <Navigation title="JUNREY" :routes="routes"></Navigation>
   <router-view />
 </template>
 

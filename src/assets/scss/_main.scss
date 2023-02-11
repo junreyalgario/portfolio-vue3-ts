@@ -8,6 +8,7 @@ body {
 }
 
 .content {
-  padding: 20px;
+  padding: 20px 100px;
   background-color: green;
+  height: calc(100vh - ($header_height * 2));
 }

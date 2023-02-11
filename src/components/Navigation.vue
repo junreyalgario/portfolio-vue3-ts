@@ -1,9 +1,13 @@
 <template>
   <nav class="header">
-    <div>{{ props.title }}</div>
+    <div class="title">{{ props.title }}</div>
     <div class="r-list">
       <ul>
-        <li v-for="(route, index) in props.routes" :key="index">
+        <li
+          :class="{ active: path === route.to }"
+          v-for="(route, index) in props.routes"
+          :key="index"
+        >
           <router-link :to="route.to">{{ route.title }}</router-link>
         </li>
       </ul>
@@ -12,7 +16,8 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, PropType } from "vue";
+import { defineProps, PropType, reactive, watch, computed } from "vue";
+import { useRoute } from "vue-router";
 import { Route } from "@/types";
 
 const props = defineProps({
@@ -25,4 +30,7 @@ const props = defineProps({
     required: true,
   },
 });
+
+const route = useRoute();
+const path = computed(() => route.path);
 </script>
