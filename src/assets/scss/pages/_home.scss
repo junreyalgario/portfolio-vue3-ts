@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .text {
+    line-height: 0.5;
+  }
+
+  .highlight {
+    color: $color_primary;
+    font-weight: 900;
+  }
+}

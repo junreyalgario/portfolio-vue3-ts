@@ -1,7 +1,11 @@
 @import "_vars.scss";
+@import "_utils.scss";
 @import "_colors";
 @import "_fonts.scss";
 @import "_nav_bar.scss";
+@import "_components.scss";
+@import "pages/_home.scss";
+@import "pages/_contact.scss";
 
 body {
   margin: 0 auto;
@@ -11,6 +15,31 @@ body {
 .content {
   padding: $desktop_padding;
   min-height: calc(100vh - 116px);
+  background-color: #1a1a1a;
+  color: #fff;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .title {
+      font-size: 50px;
+    }
+
+    .close {
+      position: absolute;
+      right: 0;
+      font-size: 30px;
+      cursor: pointer;
+      color: rgb(55, 53, 53);
+      top: 45px;
+
+      &:hover {
+        color: grey;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: $mobile_width) {

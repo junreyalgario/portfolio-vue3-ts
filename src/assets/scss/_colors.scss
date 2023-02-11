@@ -1,6 +1,12 @@
 .color {
-  &.primary {
+  &-primary {
     color: $color_primary;
+  }
+  &-light {
+    color: #fff;
+  }
+  &-infor {
+    color: $color_info;
   }
 }
 
