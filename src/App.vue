@@ -17,6 +17,22 @@ const routes: Array<Route> = [
     to: "/about",
   },
   {
+    title: "Resume",
+    to: "/resume",
+  },
+  {
+    title: "Services",
+    to: "/services",
+  },
+  {
+    title: "Skills",
+    to: "/skills",
+  },
+  {
+    title: "Portfolio",
+    to: "/portfolio",
+  },
+  {
     title: "Contact",
     to: "/contact",
   },

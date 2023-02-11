@@ -13,6 +13,31 @@ const routes: Array<RouteRecordRaw> = [
     name: "about",
     component: AboutView,
   },
+  {
+    path: "/resume",
+    name: "resume",
+    component: HomeView,
+  },
+  {
+    path: "/services",
+    name: "services",
+    component: AboutView,
+  },
+  {
+    path: "/skills",
+    name: "skills",
+    component: HomeView,
+  },
+  {
+    path: "/portfolio",
+    name: "portfolio",
+    component: AboutView,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: HomeView,
+  },
 ];
 
 const router = createRouter({
