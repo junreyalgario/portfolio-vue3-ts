@@ -1,10 +1,10 @@
 <template>
-  <Navigation title="JUNREY" :routes="routes"></Navigation>
+  <nav-bar title="JUNREY" :routes="routes"></nav-bar>
   <router-view />
 </template>
 
 <script setup lang="ts">
-import Navigation from "@/components/Navigation.vue";
+import NavBar from "@/components/NavBar.vue";
 import { Route } from "./types";
 
 const routes: Array<Route> = [

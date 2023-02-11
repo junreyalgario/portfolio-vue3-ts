@@ -13,8 +13,17 @@
           </li>
         </ul>
       </div>
-      <button class="menu" @click="menuClick">
-        <font-awesome-icon class="icon light" icon="fa-solid fa-bars" />
+      <button class="menu light" @click="state.menu = !state.menu">
+        <font-awesome-icon
+          v-if="!state.menu"
+          class="icon light"
+          icon="fa-solid fa-bars"
+        />
+        <font-awesome-icon
+          v-if="state.menu"
+          class="icon light"
+          icon="fa-solid fa-close"
+        />
       </button>
     </div>
     <div class="mobile">

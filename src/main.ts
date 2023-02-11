@@ -7,8 +7,8 @@ import "@/assets/scss/_main.scss";
 // Font awesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-library.add(faBars);
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+library.add(faBars, faClose);
 
 createApp(App)
   .use(store)
