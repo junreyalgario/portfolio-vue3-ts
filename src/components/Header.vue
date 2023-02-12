@@ -1,9 +1,16 @@
 <template>
-  <div class="header">
-    <h1 class="title">{{ props.title }}</h1>
-    <button v-if="props.closable" class="icon close">
-      <font-awesome-icon class="icon" icon="fa-solid fa-close" @click="close" />
-    </button>
+  <div>
+    <div class="header">
+      <h1 class="title">{{ props.title }}</h1>
+      <button v-if="props.closable" class="icon close">
+        <font-awesome-icon
+          class="icon"
+          icon="fa-solid fa-close"
+          @click="close"
+        />
+      </button>
+    </div>
+    <div class="hr primary"></div>
   </div>
 </template>
 

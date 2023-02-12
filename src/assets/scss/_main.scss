@@ -6,6 +6,7 @@
 @import "_components.scss";
 @import "pages/_home.scss";
 @import "pages/_contact.scss";
+@import "pages/_about.scss";
 
 body {
   margin: 0 auto;
@@ -15,8 +16,8 @@ body {
 .content {
   padding: $desktop_padding;
   min-height: calc(100vh - 116px);
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: #0d0d0d;
+  color: $color_light;
 
   .header {
     display: flex;
@@ -25,6 +26,7 @@ body {
 
     .title {
       font-size: 50px;
+      color: $color_primary;
     }
 
     .close {
